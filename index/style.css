@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap");
+
+:root {
+    --top-height: 2rem;
+    /*========== Colors ==========*/
+   
+    --container-color: #FFF;
+    /*========== Font and typography ==========*/
+    /*========== Font family ==========*/
+    --font-body: "Montserrat", sans-serif;
+    --font-Lato:"Lato",sans-serif;
+    /*========== Font weight ==========*/
+    --font-light:400;
+    --font-semi-bold:600;
+    --font-bold:700 ;
+    /*========== Margenes ==========*/
+    --mb-0-25:.25rem;
+    --mb-0-5:.5rem;
+    --mb-0-75:.75rem;
+    --mb-1-5:1.5rem;
+    --mb-2: 2rem;
+    --mb-full:12rem ;
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+  }
+  @media screen and (min-width: 968px) {
+    :root {
+      --biggest-font-size: 5rem;
+      --h2-font: 4.5rem;
+      --h3-font: 3.2rem;
+      --h4-font: 1.8rem;
+      --h5-font: 1.5rem;
+      --normal-font:1rem;
+      --small-font: .900rem;
+      --smaller-font: .80rem;
+    }
+  }
+  
+  *, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font);
+    background: var(--container-color);
+    color: var(--text-color);
+    transition: 0.5s;
+  }
+  
+  h1, h2, h3 {
+    font-weight: var(--font-semi-bold);
+    color: var(--text-color);
+    line-height: 1.5;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  h3 {
+    font-family: var(--font-Lato);
+  }
+  
+  h1, h2 {
+    font-family: var(--body-font);
+  }
+  
+  a {
+    text-decoration: none;
+    font-family: var(--font-Lato);
+  }
+  
+  p {
+    font-family: var(--font-Lato);
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  /* layout */
+  .container{
+  max-width: 968px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+  }
+
+
+
+/*nav*/
+#header{
+  position: absolute;
+  right: 0;
+  background-color: transparent !important;
+}
+header{
+  width: 100%;
+
+}
+.logo{
+  position: absolute;
+  padding: 2rem 4rem;
+
+}
+
+
+  .left-hero,.right-hero{
+    width: 50%;
+    height: 100vh;
+    
+}
+
+.left-hero { 
+ display: flex;
+ justify-content: center;
+ align-items: flex-end;
+
+ background: #FDD65B;
+}
+.right-hero{
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:stretch;
+}
+
+
+.second_hero{
+height: 100vh;
+}
+
+
+.sub_heading{
+  margin-top:var(--mb-full);
+  width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items:center;
+}
+
+.sub_heading p{
+  margin-top: 1rem;
+width: 40%;
+line-height: 2rem;
+text-align: center;
+}
+.sub_heading hr{
+color:#00715D;
+
+}
+
+/*login*/
+.login-container{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.login-form-1{
+  padding: 5%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-1 h3{
+  text-align: center;
+  color: #333;
+}
+.login-form-2{
+  padding: 5%;
+  background: #00715D;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-2 h3{
+  text-align: center;
+  color: #fff;
+}
+.login-container form{
+  padding: 10%;
+}
+.btnSubmit
+{
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  border: none;
+  cursor: pointer;
+}
+.login-form-1 .btnSubmit{
+  font-weight: 600;
+  color: #fff;
+  background-color: #00715D;
+}
+.login-form-2 .btnSubmit{
+  font-weight: 600;
+  color: #00715D;
+  background-color: #fff;
+}
+.login-form-2 .ForgetPwd{
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.login-form-1 .ForgetPwd{
+  color: #00715D;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+/*owl corasul*/
+
+
+.outer-slider{
+  max-width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+.outer-slider .item{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 10px 1px #ccc;
+  height: 300px;
+  margin: 10px;
+}
