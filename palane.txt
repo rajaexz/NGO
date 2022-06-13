@@ -1,0 +1,21 @@
+[-] creat dr sturctur 
+[-] creat a npm projcet and install all dependancies 
+ - dependancies
+ -express 
+ -ejs
+ -dev dependancies
+ - nodemon
+ [-] create express server - create a server.js file 
+ [-] ctreat home page using htlm and css 
+  - oder summary scetion 
+  - empty cart scetion 
+  [] create oder controller an like it in server.js 
+  [] create order view with table for custumer and admin 
+  [] create register crud 
+   [] home 
+   []cart 
+   [] login 
+   []register
+   []empty cart
+[] routes
+ 
