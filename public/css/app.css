@@ -486,6 +486,18 @@ height:50px;
 .sideline:after {
     margin: 0 0 0 20px;
 }
+.soical-media .all_link{
+  margin-top: 8rem;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero_btn,.all_link li a{
+  margin-top: 2rem;
+  text-decoration: none;
+  color: #ebebeb;
+}
 
 /*second*/
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap");
@@ -1011,6 +1023,12 @@ header .container {
 }
 .footer__content ul li {
   margin-bottom: 0.7rem;
+}
+
+
+#owl-carousel .item{
+  display: flex !important;
+flex-direction: column !important;
 }
 
 @media screen and (max-width: 968px) {

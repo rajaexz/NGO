@@ -12,11 +12,9 @@ const gust =require('../app/http/middleware/gust');
      app.post('/login',authController().postloginRoutes)
 
      app.post('/logout',authController().logout)
-     app.get('/cart',cartController().cartRoutes);
-
      
-      app.post('/update-cart',cartController().updateRoutes)
-    
+     app.get('/hotal',cartController().cartRoutes)
+   
 }
 
 module.exports = demo;
